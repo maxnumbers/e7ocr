@@ -35,17 +35,30 @@ no_of_lines_found = len(equip_display_borders)
 # print(no_of_lines_found, " lines were found as borders")
 
 # check that at least 4, but less than 8 boundary lines found
+if no_of_lines_found > 4:
+    "placeholder"
+    # TODO want to add check for x1,y1 values being to close to other line's values
+    # if w/in ~5-10 pixels of one another
+    # delete the shorter line
 
 for line in equip_display_borders:
     for x1, y1, x2, y2 in line:
-        if (no_of_lines_found > 4):
-            for x1_vals in enumerate()
-    
-        # line is good :D
-        cv2.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        "placeholder"
+        # creates a line on the image so that you can see where it beleives the line is
+        # cv2.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
-cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
-cv2.imshow("Image", img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    # interpret the box borders
+    #  value we care about's x1 = x2 or y1 = y2... only one will be true
+    equip_box_corners: {
+        "top_left": (x_same_small, y_same_small),
+        "top_right": (x_same_large, y_same_small),
+        "bottom_left": (x_same_small, y_same_large),
+        "bottom_right": (x_same_large, y_same_large),
+    }
+    # return equip_box_corners
+
+# cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
+# cv2.imshow("Image", img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
