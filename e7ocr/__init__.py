@@ -1,1 +1,1 @@
-from e7ocr.parsers import gear
+# from e7ocr.parsers import gear
