@@ -2,5 +2,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "editor.defaultFormatter": "vscode.python",
+    "python.pythonPath": "C:\\Users\\John\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
 }
